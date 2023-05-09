@@ -4,6 +4,19 @@ fn main() {
     get_and_show_user_data_in_the_terminal();
 }
 
+fn cicle_loop() {
+    let mut counter = 0;
+
+    loop {
+        println!("Hello, world!");
+        counter += 1;
+
+        if counter == 10 {
+            break;
+        }
+    }
+}
+
 fn get_and_show_user_data_in_the_terminal() {
     println!("Please enter your name: ");
     let mut name: String = String::new();
